@@ -2,7 +2,7 @@
 # Spatio-Temporal Dynamic Inference Network for Group Activity Recognition
 
 The source codes for ICCV2021 Paper: 
-Dynamic Inference Network for Group Activity Recognition.
+Spatio-Temporal Dynamic Inference Network for Group Activity Recognition.
 
 If you find our work or the codebase inspiring and useful to your research, please cite
 ```
