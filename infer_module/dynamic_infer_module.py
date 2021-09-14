@@ -409,7 +409,7 @@ class Multi_Dynamic_Inference(nn.Module):
                  in_dim,
                  person_mat_shape,
                  stride = 1,
-                 kernel_size = (3, 3),
+                 kernel_size = [(3, 3)],
                  dynamic_sampling = False,
                  sampling_ratio = [1],
                  group = 1,
@@ -448,7 +448,7 @@ class Hierarchical_Dynamic_Inference(nn.Module):
                  in_dim,
                  person_mat_shape,
                  stride = 1,
-                 kernel_size = (3, 3),
+                 kernel_size = [(3, 3)],
                  dynamic_sampling = False,
                  sampling_ratio = [1],
                  group = 1,
@@ -458,11 +458,12 @@ class Hierarchical_Dynamic_Inference(nn.Module):
                  cfg = None):
         super(Hierarchical_Dynamic_Inference, self).__init__()
 
+        assert len(kernel_size) == 2
         self.DPI_1 = Dynamic_Person_Inference(
                  in_dim = in_dim,
                  person_mat_shape = person_mat_shape,
                  stride = stride,
-                 kernel_size = (1, 7),
+                 kernel_size = kernel_size[0],
                  dynamic_sampling = dynamic_sampling,
                  sampling_ratio = sampling_ratio,
                  group = group,
@@ -478,7 +479,7 @@ class Hierarchical_Dynamic_Inference(nn.Module):
                 in_dim=in_dim,
                 person_mat_shape=person_mat_shape,
                 stride=stride,
-                kernel_size=(7, 1),
+                kernel_size=kernel_size[1],
                 dynamic_sampling=dynamic_sampling,
                 sampling_ratio=sampling_ratio,
                 group=group,
