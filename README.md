@@ -26,13 +26,31 @@ If you find our work or the codebase inspiring and useful to your research, plea
 
 
 
-
 ## Prepare Datasets
 
 1. Download publicly available datasets from following links: [Volleyball dataset](http://vml.cs.sfu.ca/wp-content/uploads/volleyballdataset/volleyball.zip) and [Collective Activity dataset](http://vhosts.eecs.umich.edu/vision//ActivityDataset.zip).
 2. Unzip the dataset file into `data/volleyball` or `data/collective`.
+3. Download the file `tracks_normalized.pkl` from [cvlab-epfl/social-scene-understanding](https://raw.githubusercontent.com/wjchaoGit/Group-Activity-Recognition/master/data/volleyball/tracks_normalized.pkl) and put it into `data/volleyball/videos`
 
 
+## Using Docker
+1. Checkout repository and `cd PROJECT_PATH`
+
+2. **Build the Docker container**
+```shell
+docker build -t din_gar https://github.com/JacobYuan7/DIN_GAR.git#main
+```
+
+3. **Run the Docker container**
+```shell
+docker run --shm-size=2G -v data/volleyball:/opt/DIN_GAR/data/volleyball -v result:/opt/DIN_GAR/result --rm -it din_gar
+```
+- `--shm-size=2G`: To prevent _ERROR: Unexpected bus error encountered in worker. This might be caused by insufficient shared memory (shm)._, you have to extend the container's shared memory size. Alternatively: `--ipc=host`
+- `-v data/volleyball:/opt/DIN_GAR/data/volleyball`: Makes the host's folder `data/volleyball` available inside the container at `/opt/DIN_GAR/data/volleyball`
+- `-v result:/opt/DIN_GAR/result`: Makes the host's folder `result` available inside the container at `/opt/DIN_GAR/result`
+- `-it` & `--rm`: Starts the container with an interactive session (PROJECT_PATH is `/opt/DIN_GAR`) and removes the container after closing the session.
+- `din_gar` the name/tag of the image
+- optional: `--gpus='"device=7"'` restrict the GPU devices the container can access.
 
 ## Get Started
 1. **Train the Base Model**: Fine-tune the base model for the dataset. 
