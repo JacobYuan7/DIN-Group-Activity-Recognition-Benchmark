@@ -137,15 +137,15 @@ def train_net(cfg):
             # Save model
             if cfg.training_stage==2:
                 # None
-                if test_info['activities_acc'] > 93.3: # 95.0: #92.45:
-                    state = {
-                        'epoch': epoch,
-                        'state_dict': model.state_dict(),
-                        'optimizer': optimizer.state_dict(),
-                    }
-                    filepath=cfg.result_path+'/stage%d_epoch%d_%.2f%%.pth'%(cfg.training_stage,epoch,test_info['activities_acc'])
-                    torch.save(state, filepath)
-                    print('model saved to:',filepath)
+                # if test_info['activities_acc'] > 93.1:
+                state = {
+                    'epoch': epoch,
+                    'state_dict': model.state_dict(),
+                    'optimizer': optimizer.state_dict(),
+                }
+                filepath=cfg.result_path+'/stage%d_epoch%d_%.2f%%.pth'%(cfg.training_stage,epoch,test_info['activities_acc'])
+                torch.save(state, filepath)
+                print('model saved to:',filepath)
             elif cfg.training_stage==1:
                 if test_info['activities_acc'] == best_result['activities_acc']:
                     for m in model.modules():
