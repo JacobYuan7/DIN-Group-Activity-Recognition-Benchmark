@@ -1019,7 +1019,8 @@ class ARG_volleyball(nn.Module):
             activities_scores = torch.mean(activities_scores.reshape(B, 3, -1), dim=1).reshape(B, -1)
 
         # return [activities_scores] # actions_scores, #'boxes_states':boxes_states
-        return {'activities':activities_scores, 'actions_scores':actions_scores}
+        # return {'activities':activities_scores, 'actions_scores':actions_scores}
+        return {'activities':activities_scores}
 
 
 class SACRF_BiUTE_volleyball(nn.Module):
