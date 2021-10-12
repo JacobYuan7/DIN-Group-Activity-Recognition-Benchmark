@@ -6,10 +6,11 @@ Spatio-Temporal Dynamic Inference Network for Group Activity Recognition.
 
 If you find our work or the codebase inspiring and useful to your research, please cite
 ```
-@article{yuan2021DIN,
+@inproceedings{yuan2021DIN,
   title={Spatio-Temporal Dynamic Inference Network for Group Activity Recognition},
   author={Yuan, Hangjie and Ni, Dong and Wang, Mang},
-  journal={arXiv preprint arXiv:2108.11743},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={7476--7485},
   year={2021}
 }
 ```
