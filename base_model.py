@@ -22,6 +22,8 @@ class Basenet_volleyball(nn.Module):
             self.backbone=MyVGG16(pretrained=True)
         elif cfg.backbone=='vgg19':
             self.backbone=MyVGG19(pretrained=True)
+        elif cfg.backbone == 'res18':
+            self.backbone = MyRes18(pretrained = True)
         else:
             assert False
         
