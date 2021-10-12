@@ -1000,7 +1000,7 @@ class ARG_volleyball(nn.Module):
 
         # Predict actions
         boxes_states_flat = boxes_states.reshape(-1, NFS)  # B*T*N, NFS
-        actions_scores = self.fc_actions(boxes_states_flat)  # B*T*N, actn_num
+        # actions_scores = self.fc_actions(boxes_states_flat)  # B*T*N, actn_num
 
         # Predict activities
         boxes_states_pooled, _ = torch.max(boxes_states, dim=2)
@@ -1008,14 +1008,14 @@ class ARG_volleyball(nn.Module):
         activities_scores = self.fc_activities(boxes_states_pooled_flat)  # B*T, acty_num
 
         # Temporal fusion
-        actions_scores = actions_scores.reshape(B, T, N, -1)
-        actions_scores = torch.mean(actions_scores, dim=1).reshape(B * N, -1)
+        # actions_scores = actions_scores.reshape(B, T, N, -1)
+        # actions_scores = torch.mean(actions_scores, dim=1).reshape(B * N, -1)
         activities_scores = activities_scores.reshape(B, T, -1)
         activities_scores = torch.mean(activities_scores, dim=1).reshape(B, -1)
 
         if not self.training:
             B = B // 3
-            actions_scores = torch.mean(actions_scores.reshape(B, 3, N, -1), dim=1).reshape(B * N, -1)
+            # actions_scores = torch.mean(actions_scores.reshape(B, 3, N, -1), dim=1).reshape(B * N, -1)
             activities_scores = torch.mean(activities_scores.reshape(B, 3, -1), dim=1).reshape(B, -1)
 
         # return [activities_scores] # actions_scores, #'boxes_states':boxes_states
