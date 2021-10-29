@@ -17,8 +17,8 @@ cfg.image_size = 720, 1280
 cfg.out_size = 22, 40
 cfg.emb_features = 512
 
-cfg.num_before = 10
-cfg.num_after = 9
+cfg.num_before = 5
+cfg.num_after = 4
 
 cfg.batch_size=8
 cfg.test_batch_size=1
