@@ -121,7 +121,7 @@ docker run --shm-size=2G -v data/volleyball:/opt/DIN_GAR/data/volleyball -v resu
             ```
 
 Another work done by us, solving GAR from the perspective of incorporating visual context, is also [available](https://ojs.aaai.org/index.php/AAAI/article/view/16437/16244).
-```
+```bibtex
 @inproceedings{yuan2021visualcontext,
   title={Learning Visual Context for Group Activity Recognition},
   author={Yuan, Hangjie and Ni, Dong},
