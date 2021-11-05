@@ -14,4 +14,5 @@ RUN pip install \
       scikit-image \
       pillow==6.2.0 \
       thop \
-      fvcore=='0.1.2.*'
+      fvcore=='0.1.2.*' \
+      opencv-python==4.5.3.*
