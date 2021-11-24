@@ -23,9 +23,12 @@ cfg.num_after = 4
 cfg.batch_size=8
 cfg.test_batch_size=1
 cfg.num_frames=1
-cfg.train_learning_rate=1e-5
-cfg.lr_plan={}
-cfg.max_epoch=200
+# cfg.train_learning_rate=1e-5
+# cfg.lr_plan={}
+# cfg.max_epoch=200
+cfg.train_learning_rate=1e-4
+cfg.lr_plan={30:5e-5, 60:2e-5, 90:1e-5}
+cfg.max_epoch=120
 cfg.set_bn_eval = False
 cfg.actions_weights=[[1., 1., 2., 3., 1., 2., 2., 0.2, 1.]]  
 
