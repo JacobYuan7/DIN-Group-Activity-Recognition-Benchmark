@@ -16,6 +16,15 @@ If you find our work or the codebase inspiring and useful to your research, plea
   pages={7476--7485},
   year={2021}
 }
+@inproceedings{yuan2021visualcontext,
+  title={Learning Visual Context for Group Activity Recognition},
+  author={Yuan, Hangjie and Ni, Dong},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={35},
+  number={4},
+  pages={3261--3269},
+  year={2021}
+}
 ```
         
 
