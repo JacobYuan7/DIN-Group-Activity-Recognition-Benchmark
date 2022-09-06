@@ -7,6 +7,10 @@ Spatio-Temporal Dynamic Inference Network for Group Activity Recognition.
 [[supplemental material]](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Yuan_Spatio-Temporal_Dynamic_Inference_ICCV_2021_supplemental.pdf)
 [[arXiv]](http://arxiv.org/abs/2108.11743)
 
+[![GitHub Stars](https://img.shields.io/github/stars/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark?style=social)](https://github.com/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)
+[![GitHub Forks](https://img.shields.io/github/forks/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)](https://github.com/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)
+
 If you find our work or the codebase inspiring and useful to your research, please cite
 ```bibtex
 @inproceedings{yuan2021DIN,
