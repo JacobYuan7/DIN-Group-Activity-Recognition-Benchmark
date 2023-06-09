@@ -9,6 +9,7 @@ Spatio-Temporal Dynamic Inference Network for Group Activity Recognition.
 
 [![GitHub Stars](https://img.shields.io/github/stars/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark?style=social)](https://github.com/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)
 [![GitHub Forks](https://img.shields.io/github/forks/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)](https://github.com/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FJacobYuan7%2FDIN-Group-Activity-Recognition-Benchmark%2F&count_bg=%235FC1D7&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://hits.seeyoufarm.com)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)
 
 If you find our work or the codebase inspiring and useful to your research, please consider ⭐starring⭐ the repo and citing:
