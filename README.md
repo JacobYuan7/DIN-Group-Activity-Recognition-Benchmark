@@ -1,11 +1,15 @@
 
 # Spatio-Temporal Dynamic Inference Network for Group Activity Recognition
 
-The source codes for ICCV2021 Paper: 
-Spatio-Temporal Dynamic Inference Network for Group Activity Recognition.  
-[[paper]](https://openaccess.thecvf.com/content/ICCV2021/papers/Yuan_Spatio-Temporal_Dynamic_Inference_Network_for_Group_Activity_Recognition_ICCV_2021_paper.pdf)
-[[supplemental material]](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Yuan_Spatio-Temporal_Dynamic_Inference_ICCV_2021_supplemental.pdf)
-[[arXiv]](http://arxiv.org/abs/2108.11743)
+The source codes for ICCV2021 Paper **Spatio-Temporal Dynamic Inference Network for Group Activity Recognition**.  
+[![ICCV](https://img.shields.io/badge/ICCV-Paper-<COLOR>.svg)](https://openaccess.thecvf.com/content/ICCV2021/papers/Yuan_Spatio-Temporal_Dynamic_Inference_Network_for_Group_Activity_Recognition_ICCV_2021_paper.pdf)
+[![ICCV](https://img.shields.io/badge/ICCV-Supplementary-<COLOR>.svg)](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Yuan_Spatio-Temporal_Dynamic_Inference_ICCV_2021_supplemental.pdf)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](http://arxiv.org/abs/2108.11743)
+
+
+Note that we also incorporate the core implementation of our AAAI 2021 paper **Learning Visual Context for Group Activity Recognition** in this [repo](https://github.com/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark/blob/main/infer_module/TCE_STBiP_module.py).
+
+[![AAAI](https://img.shields.io/badge/AAAI-Paper-<COLOR>.svg)](https://ojs.aaai.org/index.php/AAAI/article/view/16437)
 
 [![GitHub Stars](https://img.shields.io/github/stars/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark?style=social)](https://github.com/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)
 [![GitHub Forks](https://img.shields.io/github/forks/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)](https://github.com/JacobYuan7/DIN-Group-Activity-Recognition-Benchmark)
